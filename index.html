@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshan B - Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="#home" class="text-2xl font-bold text-gray-900">AB.</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#about" class="nav-link">About</a>
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                        <a href="#skills" class="nav-link">Skills</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="mobile-menu-btn">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-b border-gray-200">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#portfolio" class="mobile-nav-link">Portfolio</a>
+                <a href="#skills" class="mobile-nav-link">Skills</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section bg-cover bg-center" style="background-image: url('https://placehold.co/1920x1080/e2e8f0/e2e8f0');">
+            <div class="bg-black/30 w-full h-full flex flex-col justify-center">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h1 class="text-4xl md:text-6xl font-bold text-white mb-2">Akshan B</h1>
+                    <p class="text-lg md:text-xl text-indigo-300 font-semibold mb-4">Computer Science Student</p>
+                    <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
+                        Passionate about crafting user-friendly and visually appealing web experiences. 
+                        I love turning complex problems into simple, elegant solutions using modern technologies.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">About Me</h2>
+                    <p class="text-indigo-600">A little bit about my journey</p>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-10">
+                    <div class="md:w-1/3 text-center">
+                        <img src="https://placehold.co/400x400/cccccc/333333?text=AB" alt="Akshan B" class="rounded-full w-64 h-64 mx-auto border-4 border-indigo-500 shadow-lg">
+                    </div>
+                    <div class="md:w-2/3">
+                        <p class="text-lg text-gray-700 mb-4">
+                            Hello! I'm Akshan B, a passionate web developer with a knack for creating beautiful, functional, and user-centered digital experiences. I specialize in front-end development, working with technologies like HTML, CSS, JavaScript, and modern frameworks like React.
+                        </p>
+                        <p class="text-lg text-gray-700">
+                            My goal is to build things that make a difference. Whether it's a sleek corporate website or a complex web application, I am dedicated to delivering high-quality code and pixel-perfect design.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Portfolio</h2>
+                    <p class="text-indigo-600">Check out some of my recent work</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="portfolio-card">
+                        <img src="https://placehold.co/600x400/f1f5f9/475569?text=Expense+Tracker" alt="Expense Tracker Web App" class="portfolio-img">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Expense Tracker Web App</h3>
+                            <p class="text-gray-600">
+                                A budgeting and savings tracker with interactive charts, built using React and Flask.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
+                        <img src="https://placehold.co/600x400/f1f5f9/475569?text=Portfolio" alt="Personal Portfolio Website" class="portfolio-img">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Personal Portfolio Website</h3>
+                            <p class="text-gray-600">
+                                A responsive personal portfolio showcasing skills, projects, and contact details.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Skills</h2>
+                    <p class="text-indigo-600">Technologies I'm proficient in</p>
+                </div>
+                <div class="max-w-4xl mx-auto">
+                    <div class="flex flex-wrap justify-center gap-6">
+                        <span class="skill-tag"><i class="fab fa-html5 text-indigo-500 text-2xl"></i> HTML5</span>
+                        <span class="skill-tag"><i class="fab fa-css3-alt text-indigo-500 text-2xl"></i> CSS3</span>
+                        <span class="skill-tag"><i class="fab fa-js-square text-indigo-500 text-2xl"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="fab fa-react text-indigo-500 text-2xl"></i> React</span>
+                        <span class="skill-tag"><i class="fab fa-node-js text-indigo-500 text-2xl"></i> Node.js</span>
+                        <span class="skill-tag"><i class="fab fa-git-alt text-indigo-500 text-2xl"></i> Git & GitHub</span>
+                        <span class="skill-tag"><i class="fab fa-java text-indigo-500 text-2xl"></i> Java</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="max-w-2xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        I'm always open to discussing new opportunities and interesting projects. Feel free to reach out if you'd like to work together!
+                    </p>
+                    <a href="mailto:akshankulal33@gmail.com" class="contact-btn">
+                        <i class="fas fa-envelope mr-2"></i> akshankulal33@gmail.com
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 border-t border-gray-200">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <p class="text-center text-gray-500 text-sm">
+                &copy; 2025 Akshan B. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
